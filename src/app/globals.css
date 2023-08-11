@@ -25,3 +25,18 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.img{
+  background-image: url('/bg_star.webp');
+}
+
+.no-scrollbar::-webkit-scrollbar{
+  display: none;
+}
+
+
+.selection{
+  display:  flex;
+  flex-direction: column;
+  user-select: none;
+}
