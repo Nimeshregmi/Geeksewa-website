@@ -4,9 +4,9 @@ export default function Semister({ semisters, param1 ,sub }) {
     return (<>
         <div >
             <div className="mb-6">
-                <h5 className="mb-2.5 font-bold uppercase justify-start md:mx-10 text-2xl flex ">{semisters} Semister</h5>
+                <h5 className="mb-2.5 font-bold uppercase justify-start md:mx-10 text-2xl flex ">  {semisters} Semester</h5>
                 <div>{
-                    sub.map((item) => (<ul className="mb-0 "><li className="justify-start md:mx-10 flex">
+                    sub.map((item) => (<ul className="mb-0 "><li className="justify-start list-decimal md:mx-10 my-3 mx-3 flex">
                     <Link legacyBehavior href={`/${param1}/${item}`}><a className="text-white hover:text-cyan-400  font-light">{item}</a></Link>
                 </li>
                 </ul>)

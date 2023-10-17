@@ -3,7 +3,8 @@ const Subject = ({ sub }) => {
     const year = [2077, 2078, 2079, 2080, 2081, 2082, 2083, 2084, 2085, 2086, 2087];
     return (
         <section className=" selection">
-            <div className=" md:w-full justify-center  flex my-4 "><p className="max-md:px-2 md:font-bold flex-wrap text-lg md:text-3xl">{sub}</p></div> 
+            
+            <div className=" md:w-full justify-center  flex my-4 mb-7"><p className="max-md:px-2 md:font-bold flex-wrap text-lg md:text-3xl">{sub}</p></div> 
             <div className="flex md:hidden overflow-x-scroll mx-5 "> {
                 year.map((item)=>{
                     return <div className="bg-cyan-400 m-3 rounded-lg  py-1 px-4"><Link href={"/"}>{item}</Link></div>

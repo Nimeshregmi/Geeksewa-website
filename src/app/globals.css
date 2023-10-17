@@ -40,3 +40,15 @@ body {
   flex-direction: column;
   user-select: none;
 }
+
+
+/* This is button class for every button inside the body */
+.button{
+  box-shadow: 2px 2px white;
+  transition: all ease-out .3s;
+  @apply text-black px-4 py-2 bg-[#ffdd33] rounded-lg font-semibold
+}
+.button:hover{
+  box-shadow: 4px 4px white;
+  font-weight: bold;
+}

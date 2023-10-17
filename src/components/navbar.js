@@ -3,6 +3,8 @@ import Link from "next/link";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { VscThreeBars } from "react-icons/vsc";
 import { useRef } from "react";
+import NavbarsecondPart from "./navbarsecondpart";
+import ScrollBarUnderNavbar from "./ScrollBarUnderNavbar";
 // import NavbarsecondPart from "./navbarsecondpart";
 export default function Navbar() {
     const togglecart = () => {
@@ -18,7 +20,7 @@ export default function Navbar() {
         }
     }
     const ref = useRef();
-    return (<>
+    return (<div>
         <div className="  h-[8vh] lg:h-[10vh] flex justify-between max-w-[100vw] items-center bg-gray-800 shadow-xl ">
 
 
@@ -53,10 +55,10 @@ export default function Navbar() {
             </div>
 
             {/* This is sinin and search button of header */}
-            {/* <NavbarsecondPart /> */}
-
-
-
+            <NavbarsecondPart />
         </div>
-    </>)
+
+        {/* scrollable part of  navbar which contain all the courses  */}
+        <ScrollBarUnderNavbar/>
+    </div>)
 }
